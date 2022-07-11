@@ -23,12 +23,24 @@
     </header>
     <form>
       <fieldset>
-        <legned>Contact Information</legned>
+        <legend>Contact Information</legend>
+
         <label for="name">Full Name</label>
-        <input type="text" id="name" name="user-name" />
+        <input
+          type="text"
+          id="name"
+          name="user-name"
+          placeholder="Required"
+          class="contact"
+        />
 
         <label for="email">Email Address</label>
-        <input type="email" id="email" name="user-email" />
+        <input
+          type="email"
+          id="email"
+          name="user-email"
+          placeholder="Required"
+        />
 
         <label for="address">Street Address</label>
         <input type="text" id="address" name="user-address" />
@@ -38,13 +50,59 @@
 
         <label for="state">State</label>
         <select id="state" name="user-state">
+          <option value="" disabled selected hidden>Choose State</option>
           <option value="florida_state">Florida</option>
           <option value="colorado_state">Colorado</option>
           <option value="ohio_state">Ohio</option>
           <option value="washington_state">Washington</option>
           <option value="tennessee_state">Tennessee</option>
         </select>
+
+        <label for="zip">Zip Code</label>
+        <input type="text" id="zip" name="user-zip" />
+
+        <hr class="line2" />
       </fieldset>
+
+      <fieldset>
+        <legend>Newsletter</legend>
+        <p>Select the newsletters you would like to recieve</p>
+
+        <div class="checkgroup">
+          <input
+            type="checkbox"
+            id="htmlnewsletter"
+            name="user_newsletter"
+          /><label for="htmlnewsletter">HTML News</label><br />
+
+          <input
+            type="checkbox"
+            id="cssnewsletter"
+            name="user_newsletter"
+          /><label for="cssnewsletter">CSS News</label><br />
+
+          <input
+            type="checkbox"
+            id="jsnewsletter"
+            name="user_newletter"
+          /><label for="jsnewsletter">Javascript News</label>
+        </div>
+
+        <h1 class="formattext">Newsletter format</h1>
+
+        <div class="radiogroup">
+          <input type="radio" id="htmlformat" name="user-newsformat" /><label
+            for="htmlformat"
+            >HTML</label
+          ><br />
+          <input type="radio" id="plaintext" name="user-newsformat" /><label
+            for="plaintext"
+            >Plain Text</label
+          >
+        </div>
+        <p>Other topics you'd hear about</p>
+      </fieldset>
+      <textarea id="comment" name="user_comment"></textarea>
     </form>
   </body>
 </html>

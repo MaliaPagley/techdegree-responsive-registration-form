@@ -18,6 +18,73 @@
     margin: auto;
     align-self: center;
 }
+/*FORM STYLING*/
+/*legend {
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 5px;
+}
+label {
+    display: block; 
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+}
+fieldset {
+    margin-top: 20px;
+    border: 0;
+}
+*/
+input[type="text"], input[type="email"] {
+    display: block; 
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px; 
+    font-size: 18px;
+    border: 2px solid rgb(236, 236, 236);
+    background-color: rgb(236, 236, 236);
+}
+ .checkgroup, .radiogroup {
+    margin: 10px;
+}
+input, .checkgroup {
+    margin-bottom: 20px;
+}
+.checkgroup label, .radiogroup label {
+    margin-left: 10px;
+}
+
+
+.formattext {
+    font-size: 15px;
+    margin: 10px 10px 20px 8px;
+    color: rgb(171, 171, 171);
+}
+
+
+
+
+label {
+   color: gray;
+}
+legend {
+    font-size: 19px;
+    
+    padding: 10px 0px 10px 2px;
+}
+#zip {
+    max-width: 40%;
+}
+.line2 {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    align-self: center;
+    border: 1px solid;
+}
+
+p {
+    color: rgb(171, 171, 171);
+}
+
 
 
 @media (min-width: 320px) {
@@ -43,6 +110,47 @@
     .lines {
         max-width: 90%;
     }
+    ::placeholder {
+        text-align: right;
+        font-size: 13px;
+        font-style: italic;
+        opacity: 30%;
+    }
+    select {
+        background: rgba(255,255,255,0.1);
+        border: none;
+        font-size: 16px;
+        height: auto;
+        margin: 0;
+        outline: 0;
+        padding: 15px;
+        width: 100%;
+        background-color: rgb(236, 236, 236);
+        
+        box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+        margin-bottom: 30px;
+      }
+
+
+    /*FORM STYLING*/
+   
+    /*label {
+        display: block; 
+        margin-top: 1.5rem;
+        font-size: 1.1rem;
+    }*/
+    fieldset {
+        border: 0;
+    }
+    
+    /* input, textarea {
+        display: block; 
+        width: 100%;
+        margin: 5px 0;
+        padding: 20px; 
+        font-size: 18px;
+    } */
+
   
 }
 @media (min-width: 1024px) {
