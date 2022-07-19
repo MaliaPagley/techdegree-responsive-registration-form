@@ -1,15 +1,18 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Roboto Slab', serif;
 }
+
 .container {
-    max-width: 1024px;
+    max-width: 768px;
     margin: 0 auto;
     padding: 1rem;
     text-align: center;
     background-color: rgb(39, 51, 65);
     font-size: 8px;
 }
+
 .container h1 {
     color:rgb(230, 230, 230);
 }
@@ -18,143 +21,282 @@
     margin: auto;
     align-self: center;
 }
-/*FORM STYLING*/
-/*legend {
-    font-weight: 700;
-    font-size: 1.75rem;
-    margin-bottom: 5px;
-}
-label {
-    display: block; 
-    margin-top: 1.5rem;
-    font-size: 1.1rem;
-}
-fieldset {
-    margin-top: 20px;
-    border: 0;
-}
-*/
-input[type="text"], input[type="email"] {
-    display: block; 
-    width: 100%;
-    margin: 5px 0;
-    padding: 8px; 
-    font-size: 18px;
-    border: 2px solid rgb(236, 236, 236);
-    background-color: rgb(236, 236, 236);
-}
- .checkgroup, .radiogroup {
-    margin: 10px;
-}
-input, .checkgroup {
-    margin-bottom: 20px;
-}
-.checkgroup label, .radiogroup label {
-    margin-left: 10px;
+
+.line2 {
+    margin: auto;
+    align-self: center;
+    border: 1px solid;
+    max-width: 90%;
 }
 
+input:focus,
+textarea:focus,
+button:focus, 
+select:focus {
+    background-color: #D6D5A8;
+    transition: all 0.5s ease;
+    outline: 2px solid   rgb(80, 108, 141);
+    border-radius: 5px;
+    color: var(--black);
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus, 
+input[type="email"]:hover,
+input[type="email"]:focus  {
+  background-color: var(--lgt-blue);
+  transition: all 0.5s ease;
+  
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px; 
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.contact-info input {
+    color: gray;
+    background-color: rgb(236, 236, 236);
+    border: 2px solid rgb(236, 236, 236);
+}
+
+.contact-info select {
+    position:relative;
+    width:100%;
+    height:40px;
+    margin: 5px 0;
+    padding: 10px; 
+    border-radius: 5px;
+    color: gray;
+    background-color: rgb(236, 236, 236);
+    border: 2px solid rgb(236, 236, 236);
+}
+
+#zip  {
+    display: block;
+    max-width: 50%;
+    margin: 5px 0;
+    padding: 2px 8px 2px 8px; 
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid rgb(236, 236, 236);
+}
+
+.zip-style {
+    margin-right: 100px;
+}
+
+.checkgroup , .radiogrouop {
+    display: block;
+    margin: 10px 0px 10px 0px;
+  }
+
+ #htmlnewsletter, 
+ #cssnewsletter, 
+ #jsnewsletter {
+  margin: 10px;
+  }
+
+  #htmlformat,
+  #plaintext {
+      margin: 10px;
+  }
 
 .formattext {
     font-size: 15px;
-    margin: 10px 10px 20px 8px;
-    color: rgb(171, 171, 171);
+    font-weight: 300;
+    margin: 10px 10px 10px 8px;
+    color:rgb(39, 51, 65);
 }
 
-
-
+button {
+    padding: 0px;
+    color: #FFF;
+    background-color: #5ccdcd;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #5ccdcd;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(52, 65, 99, 0.1) inset;
+    padding: 16px 13px 13px 20px;
+  }
 
 label {
-   color: gray;
+    color:rgb(39, 51, 65);
+    font-weight: 300;
 }
+fieldset p {
+    color:rgb(39, 51, 65);
+    font-weight: 300;
+}
+
 legend {
-    font-size: 19px;
-    
+    font-size: 18px;
+    font-weight: 400;
     padding: 10px 0px 10px 2px;
 }
-#zip {
-    max-width: 40%;
-}
-.line2 {
-    margin-top: 25px;
-    margin-bottom: 0px;
-    align-self: center;
-    border: 1px solid;
+.legend-style {
+    padding-top: 40px;
 }
 
 p {
     color: rgb(171, 171, 171);
 }
-
-
-
-@media (min-width: 320px) {
-    .top-title {
-        text-align: center;
-        margin: 20px 20px 30px 20px;
-    }
-    .top-title p {
-        color:  rgb(191, 191, 191);
-        margin: 10px 10px 25px 10px;
-    }
-    .top-title h1 {
-        font-size: 20px;
-        color: rgb(39, 51, 65);;
-    }
-    .thick-line {
-        border: 2px solid;
-        margin-bottom: 3px;
-    }
-    .thin-line {
-        border: 1px solid;
-    }
-    .lines {
-        max-width: 90%;
-    }
-    ::placeholder {
-        text-align: right;
-        font-size: 13px;
-        font-style: italic;
-        opacity: 30%;
-    }
-    select {
-        background: rgba(255,255,255,0.1);
-        border: none;
-        font-size: 16px;
-        height: auto;
-        margin: 0;
-        outline: 0;
-        padding: 15px;
-        width: 100%;
-        background-color: rgb(236, 236, 236);
-        
-        box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-        margin-bottom: 30px;
-      }
-
-
-    /*FORM STYLING*/
+.top-title {
+    text-align: center;
+    margin: 20px 20px 30px 20px;
    
-    /*label {
-        display: block; 
-        margin-top: 1.5rem;
-        font-size: 1.1rem;
-    }*/
-    fieldset {
-        border: 0;
-    }
-    
-    /* input, textarea {
-        display: block; 
-        width: 100%;
-        margin: 5px 0;
-        padding: 20px; 
-        font-size: 18px;
-    } */
+}
+
+ .top-title p {
+    color:  rgb(191, 191, 191);
+    margin: 10px 10px 25px 10px;
+}
+
+.top-title h1 {
+    font-size: 20px;
+    color: rgb(39, 51, 65);;
+}
+
+.thick-line {
+    border: 2px solid;
+    margin-bottom: 3px;
+}
+
+.thin-line {
+    border: 1px solid;
+}
+
+.lines {
+     max-width: 90%;
+}
+
+::placeholder {
+    text-align: right;
+    font-size: 13px;
+    padding-right: 5px;
+    font-style: italic;
+    opacity: 30%;
+}
+
+fieldset {
+    border: 0;
+    padding-top:0px ;
+}
+
+fieldset:first-child {
+    margin-top: -37px;
+    margin-bottom: 0px;
+    background: #D6D5A8;
+   
+}
+
+textarea {
+    display: block; 
+    width: 100%;
+    height: 100px;
+    margin: 20px 0;
+    padding: 5px; 
+    font-size: 18px;
+    border: 0;
+    background-color: rgb(236, 236, 236);
+} 
+
+footer {
+    margin: 20px 50px 100px 50px;
+    text-align: center;
+    font-weight: 300;
+    color: gray;
+    font-style: italic;
+    font-size: 15px;
+}
 
   
-}
-@media (min-width: 1024px) {
-    .lines {
-        max-width: 55%;
+
+@media (min-width: 768px) {
+
+    .lines, .line2 {
+        max-width: 50%;
     }
-}
+   
+    fieldset {
+        max-width: 55%;
+        margin: auto;
+        align-self: center;
+    }
+
+    .top-title h1 {
+        font-size: 17px;
+    }
+
+    .top-title p {
+        font-size: 12px;
+    }
+
+    footer {
+        margin: 20px 100px 100px 100px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+   
+    .contact-info select {
+        font-size: 9px;
+        max-width: 251px;
+        padding-right: 5px;
+        color: rgb(163, 163, 163);
+    }
+
+    label {
+        display: inline-block; 
+        width: 30%;
+        margin: 10px;
+        font-size: 12px;
+    }
+
+    #name, 
+    #email,
+    #address,
+    #city, #phone {
+       width: fit-content;
+    }
+   
+    .zip-style {
+       margin: 10px;
+    }
+
+    #zip {
+        display: inline-block;
+        max-width: 25%;
+    }
+    
+    .contact-info {
+        flex-grow: 1;
+    }
+
+   #state {
+        flex: 2 1 auto;
+    }
+   
+   fieldset:first-child {
+        margin-top: -29px;
+        margin-bottom: 10px;
+        border-radius: 25px;
+        background: #D6D5A8;
+    }
+
+  
+
+ }
+
+
+
