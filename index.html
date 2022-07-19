@@ -54,7 +54,8 @@
           />
           <label for="phone">Phone Number</label>
           <input
-            type="text"
+            type="tel"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             id="phone"
             name="user-phone"
             class="contact-info"
@@ -179,8 +180,10 @@
             >Plain Text</label
           >
         </div>
-        <p>Other topics you'd hear about</p>
 
+        <label for="comment" class="label-textarea"
+          >Other topics you'd hear about</label
+        >
         <textarea
           id="comment"
           name="user_comment"
